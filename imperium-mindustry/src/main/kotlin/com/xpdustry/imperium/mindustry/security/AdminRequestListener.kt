@@ -264,7 +264,7 @@ class AdminRequestListener(instances: InstanceManager) : ImperiumApplication.Lis
                     user.timesJoined,
                     punishments.findAllByIdentity(target.identity).count(),
                     if (canSeeInfo) historic.addresses.map(InetAddress::getHostAddress).toTypedArray()
-                    else arrayOf("Don't have permission to view addresses."),
+                    else arrayOf("Don't have permission to view addresses"),
                     historic.names.toTypedArray(),
                 ),
             )
